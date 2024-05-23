@@ -1,0 +1,46 @@
+.navStyle {
+    display: inline;
+    background-color: #301E67;
+    height: 75px;
+    width: 100%;
+    color: white;
+    margin-left: -50%;
+    position: fixed;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+ul:hover {
+    cursor: pointer;
+}
+
+li {
+    padding: 10px ;
+}
+
+.active {
+    background-color: white;
+    padding: 7px 7px;
+    color: #301E67;
+    border-radius: 5px;
+}
+
+.sort {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightNav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-size: 1.1rem;
+    padding: 0 50px 0 0;
+}

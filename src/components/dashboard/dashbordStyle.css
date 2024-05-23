@@ -1,0 +1,196 @@
+.dashboardStyle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width:100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.bannerStyle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100svh;
+}
+
+.bannerInside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.bannerHire {
+    background-color: #301E67;
+    width: 15svw;
+    height: 25svh;
+    padding: 20px 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+.myName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(17, 82, 223, 0.699);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 35svw;
+    height: 30svh;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #005675;
+}
+
+.nameStyle {
+    color: #005675;
+    font-size: 70%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #301E67;
+    color: white;
+    width: 100%;
+    height: 100svh;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.educaiton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #03001C;
+    width: 100%;
+    height: 100svh;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #301E67;
+}
+
+.eduDetails {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100svh;
+    justify-content: center;
+}
+
+.eduInside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #301E67;
+    height: 100%;
+    width: 100%;
+}
+
+.skillsCommon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #03001C;
+    gap: 30px;
+    margin-top: 30px;
+    height: 45dvh;
+    width: 55%;
+    border-radius: 15px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    width: 100%;
+    color: #301E67;
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    background-color: #301E67;
+    padding: 40px 50px;
+    border-radius: 15px;
+}
+
+.leftContact {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    width: 25svw;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.contact input::placeholder {
+    padding-left: 10px;
+}
+
+.contact input:focus::placeholder {
+    transition: ease-out 0.3s;
+    color: transparent;
+}
+
+.contact button {
+    width: 25.5svw;
+    height: 50px;
+    margin: 20px 0 20px 0;
+    color: black;
+    border-radius: 8px;
+}
+
+.contact button:hover {
+    transition: ease-in 0.2s;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.699);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
