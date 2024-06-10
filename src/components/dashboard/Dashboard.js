@@ -164,7 +164,7 @@ function Typewriter({ text }) {
               </div>
             </div>
             <div>
-              <p>Contact form won't work due to the absebce of a backend server.</p>
+              <p>Contact form won't work due to the absence of a backend server.</p>
             </div>
           </div>
 
