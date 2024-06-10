@@ -7,6 +7,11 @@
     margin-left: -50%;
     position: fixed;
     z-index: 1;
+    align-items: center;
+}
+
+#navStyle {
+    display: none;
 }
 
 ul {
@@ -23,7 +28,7 @@ li {
     padding: 10px ;
 }
 
-.active {
+.navStyle .active {
     background-color: white;
     padding: 7px 7px;
     color: #301E67;
@@ -43,4 +48,36 @@ li {
     gap: 50px;
     font-size: 1.1rem;
     padding: 0 50px 0 0;
+}
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 877px) {
+    .navStyle {
+        display: none;
+    }
+
+    #navStyle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #301E67;
+        height: 75px;
+        width: 100%;
+        gap: 5%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    #navStyle > ul {
+        padding: 0;
+    }
+
+    #navStyle > ul > li {
+        padding: 0;
+    }
+
+    #navStyle img {
+        width: 40px;
+    }
 }

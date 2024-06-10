@@ -49,8 +49,8 @@
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 35svw;
-    height: 30svh;
+    width: 310px;
+    height: 15svh;
     font-size: 3rem;
     font-weight: bolder;
     color: #005675;
@@ -193,4 +193,81 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .bannerStyle, .bannerInside, .about, .aboutRight, .education, .eduDetails, .eduInside, .skills, .skillsCommon, .contact, .contactDetails {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bannerStyle img {
+        width: 90%;
+    }
+
+    .eduDetails {
+        height: 100%;
+    }
+
+    .skillsCommon {
+        height: 100%;
+        width: 95%;
+    }
+
+    #skillsHtml .skillsHtmlImage {
+        order: 1;
+    }
+
+    #skillsHtml .skillsHtmlPara {
+        order: 2;
+    }
+
+    #skillsReact {
+        height: 100%;
+        padding: 10px 0 0 0;
+    }
+
+    #skillsNode p {
+        order: 2;
+    }
+
+    #skillsNode img {
+        order: 1;
+    }
+
+    .contact {
+        height: 100%;
+    }
+    
+    .contactDetails {
+        width: 80%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+
+    .contact img {
+        width: 200px;
+        height: 200px;
+        margin: 10px 0 -90px 0;
+    }
+
+    .contact .leftContact {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact input {
+        width: 90%;
+    }
+
+    .leftContact {
+        order: 2;
+    }
+
+    .rightContact {
+        order: 1;
+    }
 }

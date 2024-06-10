@@ -1,10 +1,16 @@
 import React from 'react'
 import './topNavStyle.css'
 import {Link} from 'react-scroll'
+import Home from '../../images/home.png'
+import About from '../../images/about.png'
+import Education from '../../images/education.png'
+import Technology from '../../images/technology.png'
+import HireMe from '../../images/hire.png'
 
 
 const Topnavbar = () => {
     return(
+        <>
         <nav className='navStyle'>
             <ul className='sort'>
                 <li>
@@ -29,18 +35,26 @@ const Topnavbar = () => {
                 </div>
             </ul>
         </nav>
-        // <div className='navStyle'>
-        //     <div className='sort'>
-        //         <b>THENGAL</b>
-        //         <div className='rightNav'>
-        //             <p>Home</p>
-        //             <p>About</p>
-        //             <p>Education</p>
-        //             <p>Skills</p>
-        //             <p>Contact</p>
-        //         </div>
-        //     </div>
-        // </div>
+        <nav id='navStyle'>
+            <ul>
+                <li>
+                    <Link to='bannerStyle' spy={true} smooth={true} duration={500}><img src={Home} alt='Home' /></Link>
+                </li>
+                <li>
+                    <Link to='about' spy={true} smooth={true} duration={500}><img src={About} alt='Home' /></Link>
+                </li>
+                <li>
+                    <Link to='education' spy={true} smooth={true} duration={500}><img src={Education} alt='Home' /></Link>
+                </li>
+                <li>
+                    <Link to='technology' spy={true} smooth={true} duration={500}><img src={Technology} alt='Home' /></Link>
+                </li>
+                <li>
+                    <Link to='contact' spy={true} smooth={true} duration={500}><img src={HireMe} alt='Home' /></Link>
+                </li>
+            </ul>
+        </nav>
+        </>
     )
 }
 

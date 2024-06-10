@@ -72,8 +72,12 @@ function Typewriter({ text }) {
 
     return(
       <>
-      <Topnavbar />
+        <Topnavbar />
+
         <div className='dashboardStyle'>
+
+          {/* ----- BANNER SECTION ----- */}
+
           <div className='bannerStyle' id='bannerStyle'>
             <div className='bannerInside'>
               <img src={Program} alt='photograph of the owner' height='350px' width='350px' />
@@ -83,11 +87,10 @@ function Typewriter({ text }) {
                 </div>
               </div>
             </div>
-            {/* <div className='bannerHire'>
-              <img src={Hire} alt='' width={200} style={{borderRadius: 15}} />
-              <p>Hire Me</p>
-            </div> */}
           </div>
+          
+          {/* ----- ABOUT SECTION ----- */}
+
           <div id='about' className='about'>
             <div>
               <p style={{fontSize:30}}><b>ABOUT</b></p>
@@ -97,9 +100,14 @@ function Typewriter({ text }) {
               <img src={Code} alt='Coding' height={250} width={250} style={{borderRadius: 15}} />
             </div>
           </div>
+
+          {/* ----- EDUCATION SECTION ----- */}
+          
           <div id='education' className='education'>
             <div className='eduDetails'>
-              <p style={{fontSize:30}}><b>EDUCATION</b></p>
+              <div>
+                <p style={{fontSize:30}}><b>EDUCATION</b></p>
+              </div>
               <div className='eduInside'>
                 <div className='bca'>
                   <img src={BCA} alt='BCA Certificate' height={250} width={250} style={{borderRadius: 15}} />
@@ -112,29 +120,35 @@ function Typewriter({ text }) {
               </div>
             </div>
           </div>
+
+          {/* ----- SKILLS/TECHNOLOGY SECTION ----- */}
+          
           <div id='technology' className='skills'>
             <p style={{color:'white', marginTop: 100}}><b style={{fontSize:30}}>TECHNOLOGY</b><br/>Technologies used to create this portfolio</p>
             <div className='skillsCommon'>
-              <img src={ReactIcon} alt='React icon' height={250} width={250} style={{borderRadius: 15}} />
+              <img src={ReactIcon} alt='React icon' height={250} width={250} style={{borderRadius: 15, padding: '10px 0 0 0'}} />
               <p style={{color:'white'}}><b>REACT</b><br/>React is a JavaScript library for building<br/>user interfaces (UI) with JSX, a XML/HTML like syntax.</p>
             </div>
-            <div className='skillsCommon'>
-              <p style={{color:'white'}}><b>HTML</b><br/>HTML stands for Hyper Text Markup Language<br/>and is the language for creating Web pages.</p>
-              <img src={Html} alt='React icon' height={250} width={250} style={{borderRadius: 15}} />
+            <div className='skillsCommon' id='skillsHtml'>
+              <p style={{color:'white'}} className='skillsHtmlPara'><b>HTML</b><br/>HTML stands for Hyper Text Markup Language<br/>and is the language for creating Web pages.</p>
+              <img src={Html} alt='React icon' height={250} width={250} style={{borderRadius: 15, padding: '10px 0 0 0'}} className='skillsHtmlImage' />
             </div>
-            <div className='skillsCommon'>
-              <img src={Css} alt='React icon' height={250} width={250} style={{borderRadius: 15}} />
+            <div className='skillsCommon'id='skillsReact'>
+              <img src={Css} alt='React icon' height={250} width={250} style={{borderRadius: 15, padding: '10px 0 0 0'}} />
               <p style={{color:'white'}}><b>CSS</b><br/>CSS is used to define styles for your web pages,<br/>including the design, layout and variations<br/>in display for different devices and screen sizes.</p>
             </div>
-            <div className='skillsCommon'>
+            <div className='skillsCommon' id='skillsNode'>
               <p style={{color:'white'}}><b>NODE</b><br/>Node.js is an open source server<br/>environment that uses JavaScript on the server.</p>
-              <img src={Node} alt='React icon' height={250} width={250} style={{borderRadius: 15}} />
+              <img src={Node} alt='React icon' height={250} width={250} style={{borderRadius: 15, padding: '10px 0 0 0'}} />
             </div>
-            <div className='skillsCommon' style={{marginBottom: 30}}>
+            <div className='skillsCommon' style={{marginBottom: 30, height: '100%', padding: '10px 0 0 0'}}>
               <img src={Database} alt='React icon' height={250} width={250} style={{borderRadius: 15}} />
               <p style={{color:'white'}}><b>DATABASE</b><br/>MySQL is an open-source relational database management<br/>system (RDBMS) that uses Structured Query Language (SQL)<br/>to store, manage, and retrieve structured data.</p>
             </div>
           </div>
+
+          {/* ----- CONTACT SECTION ----- */}
+          
           <div className='contact'>
             <p style={{fontSize:30}}><b>CONTACT</b></p>
             <div className='contactDetails'>
@@ -149,7 +163,11 @@ function Typewriter({ text }) {
                 <img src={Contact} alt='Contact Icon' height={400} width={400} style={{borderRadius: 15}} />
               </div>
             </div>
+            <div>
+              <p>Contact form won't work due to the absebce of a backend server.</p>
+            </div>
           </div>
+
         </div>
       </>
     )
